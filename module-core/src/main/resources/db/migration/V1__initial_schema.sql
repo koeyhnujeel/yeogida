@@ -7,7 +7,7 @@ CREATE TABLE member (
     member_type VARCHAR(10) NOT NULL,
     created_dt TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     modified_dt TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-    CONSTRAINT member_type CHECK (member_type IN ('게스트', '호스트'))
+    CONSTRAINT member_type CHECK (member_type IN ('GUEST', 'HOST'))
 );
 
 CREATE TABLE accommodation (
@@ -20,5 +20,5 @@ CREATE TABLE accommodation (
     rating DOUBLE PRECISION,
     created_dt TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     modified_dt TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-    CONSTRAINT accommodation_typeCHECK (accommodation_type IN ('호텔', '펜션', '게스트 하우스', '모텔'))
+    CONSTRAINT accommodation_typeCHECK (accommodation_type IN ('HOTEL', 'PENSION', 'GUESTHOUSE', 'MOTEL'))
 );

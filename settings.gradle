@@ -1,1 +1,3 @@
 rootProject.name = 'yeogida'
+include 'module-core'
+include 'module-api'

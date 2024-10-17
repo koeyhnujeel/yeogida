@@ -77,7 +77,7 @@ gradle-app.setting
 # Cache of project
 .gradletasknamecache
 
-application.sensitive.yml
+application-sensitive.yml
 
 # Eclipse Gradle plugin generated files
 # Eclipse Core

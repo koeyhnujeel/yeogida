@@ -1,5 +1,6 @@
 package com.zunza.yeogida.domain;
 
+import java.time.Instant;
 import java.time.ZonedDateTime;
 
 import org.springframework.data.annotation.CreatedDate;
@@ -23,8 +24,8 @@ public abstract class BaseEntity {
 	private Long id;
 
 	@CreatedDate
-	private ZonedDateTime createdDt = ZonedDateTime.now();
+	private Instant createdDt = Instant.now();
 
 	@LastModifiedDate
-	private ZonedDateTime modifiedDt = ZonedDateTime.now();
+	private Instant modifiedDt = Instant.now();
 }

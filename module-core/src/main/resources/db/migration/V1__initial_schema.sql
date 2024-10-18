@@ -20,5 +20,5 @@ CREATE TABLE accommodation (
     rating DOUBLE PRECISION,
     created_dt TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     modified_dt TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-    CONSTRAINT accommodation_type CHECK (accommodation_type IN ('HOTEL', 'PENSION', 'GUESTHOUSE', 'MOTEL'))
+    CONSTRAINT accommodation_type CHECK (accommodation_type IN ('HOTEL', 'PENSION', 'GUEST_HOUSE', 'MOTEL'))
 );

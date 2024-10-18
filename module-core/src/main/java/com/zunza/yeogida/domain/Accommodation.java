@@ -4,6 +4,8 @@ import com.zunza.yeogida.constant.AccommodationType;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -22,6 +24,7 @@ public class Accommodation extends BaseEntity {
 	private String description;
 
 	@Column(nullable = false)
+	@Enumerated(EnumType.STRING)
 	private AccommodationType accommodationType;
 
 	@Column(nullable = false)
